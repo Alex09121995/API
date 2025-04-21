@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Buscar Anime</title>
+  <link rel="stylesheet" href="style_API.css">
+</head>
+<body>
+  <h2>🔎 Buscar Anime</h2>
+  <input type="text" id="busqueda" placeholder="Ej: Naruto" />
+  <button onclick="buscarAnime()">Buscar</button>
+
+  <div id="resultados"></div>
+
+  <script>
+    //10&search=${termino}
+    function buscarAnime() {
+      const termino = document.getElementById('busqueda').value;
+      const url = `https://anime-db.p.rapidapi.com/anime?page=1&size=100&search=${termino}&sortBy=ranking&sortOrder=asc`;
+      
+      
+      fetch(url, {
+        method: 'GET',
+        headers: {
+          'x-rapidapi-host': 'anime-db.p.rapidapi.com',
+          'x-rapidapi-key': '0767f8da85mshc6b24990a4e5667p1fb579jsnc689ac9494f6'
+        }
+      })
+        .then(response => response.json())
+        .then(data => mostrarResultados(data.data))
+        .catch(error => console.error('Error al buscar:', error));
+    }
+
+   
+    function mostrarResultados(animes) {
+      const lista = document.getElementById('resultados');
+      lista.innerHTML = "";
+      
+      animes.forEach(anime => {
+        
+        const div = document.createElement('div');
+        div.className= "cajaAnime"
+        div.innerHTML = `<img class="animes"src="${anime.image}">
+        ${anime.title} </div>
+        `;
+        lista.appendChild(div);
+        
+      });
+      
+
+    }
+    
+    buscarAnime()
+
+  </script>
+</body>
+</html>
