@@ -1,7 +1,50 @@
+header{
+    font-family: "Anton SC", sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+h1{
+    font-weight: 400;
+    font-style: normal;
+}
+label{
+    font-size: 30px;
+}
+
+input{
+    height: 25px;
+}
+
+button{
+    height: 30px;
+    width: 80px;
+    background-color: orange;
+    border-radius: 5px;
+    color: azure;
+    font-family: "Anton SC", sans-serif;
+    font-size: 15px;
+}
+
+button:hover{
+    background-color: rgb(9, 9, 9);
+}
 body{
     background-color: rgb(9, 9, 9);
     color: azure;
     text-align: center;
+}
+#barraBusqueda{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    
+   
+}
+
+.color1, label{
+    color: orange;
 }
 
 #resultados{
@@ -20,14 +63,22 @@ body{
     
 }
 .cajaAnime{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     border-radius: 10px;
     box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
-    width: 200px;
+    width: 225px;
     margin: 15px 15px;
 }
 
+.generos{
+    border: 2px solid orange;
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+}
 
 
 
