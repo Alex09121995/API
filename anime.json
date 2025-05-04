@@ -1,0 +1,82 @@
+[
+  {
+    "titulo": "Naruto",
+    "genero": [
+      "Acción",
+      "Aventura",
+      "Shonen"
+    ],
+    "episodios": 220,
+    "en_emision": false
+  },
+  {
+    "titulo": "One Piece",
+    "genero": [
+      "Acción",
+      "Aventura",
+      "Fantasia"
+    ],
+    "episodios": 1000,
+    "en_emision": true
+  },
+  {
+    "titulo": "Attack on Titan",
+    "genero": [
+      "Acción",
+      "Drama",
+      "Fantasia oscura"
+    ],
+    "episodios": 87,
+    "en_emision": false
+  },
+  {
+    "titulo": "Demon Slayer",
+    "genero": [
+      "Acción",
+      "Sobrenatural",
+      "Shonen"
+    ],
+    "episodios": 55,
+    "en_emision": true
+  },
+  {
+    "titulo": "Death Note",
+    "genero": [
+      "Suspenso",
+      "Misterio",
+      "Psicológico"
+    ],
+    "episodios": 37,
+    "en_emision": false
+  },
+  {
+    "titulo": "Solo leveling",
+    "genero": [
+      "Acción",
+      "Aventura",
+      "Fantasia"
+    ],
+    "episodios": 40,
+    "en_emision": true
+  },
+  {
+    "titulo": "Solo leveling",
+    "genero": [
+      "Acción",
+      "Aventura",
+      "Fantasia"
+    ],
+    "episodios": 40,
+    "en_emision": true
+  },
+  {
+    "titulo": "Solo leveling",
+    "genero": [
+      "Acción",
+      "Aventura",
+      "Fantasia"
+    ],
+    "episodios": 40,
+    "en_emision": true
+  }
+]

@@ -80,5 +80,13 @@ body{
     flex-wrap: wrap;
 }
 
-
+.tituloAnime::before {
+    content: "⭐ ";
+    color: gold;
+    font-size: 1.2em;
+    margin-right: 5px;
+  }
+  .animeF{
+    height: 300px;width: 300px;
+  }
 
